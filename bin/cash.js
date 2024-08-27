@@ -17,7 +17,7 @@ const currencies = require(`../lib/${config.get('apiName') || 'exchangeRates'}.j
 const memGot = mem(got, { maxAge: 600000 });
 
 // API Source
-const API = config.get('apiSource') || 'https://api.exchangeratesapi.io/v1/latest?access_key=' + process.env.API_KEY
+const API = config.get('apiSource') || 'https://api.exchangeratesapi.io/v1/latest?access_key=' + process.env.CURRENCY_EXCHANGE_API_KEY
 
 const cash = async command => {
 	const { amount } = command;
