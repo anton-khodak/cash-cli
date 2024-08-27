@@ -3,3 +3,5 @@ yarn.lock
 !test/fixtures/project/node_modules
 .nyc_output
 coverage
+.idea/
+.env
